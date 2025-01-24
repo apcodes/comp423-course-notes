@@ -90,7 +90,7 @@ git push --set-upstream origin main
 }
 ```
 1. Reopen the project in dev container.    
-2. Press ctrl + shift + p (cmd + shift + p for mac) then type Dev Containers: Reopen in Container.   
+2. Press ctrl + shift + p (cmd + shift + p for mac) then type "Dev Containers: Reopen in Container".   
 3. Using the **go version** command you can see what version of go your on.
 ```
 go version
@@ -110,7 +110,7 @@ This sets up a new Go project and creates a go.mod file, which helps manage depe
 ```
 touch main.go
 ```
-Edit main.go to display “Hello COMP423”: Open the file in VSCode and add the following code:
+Edit `main.go` to display “Hello COMP423”: Open the file in VSCode and add the following code:
 ```
 package main
 
@@ -128,13 +128,13 @@ This is a simplified way to compile and run the Go program in a single line:
 go run main.go
 ```
 
-The second method is to use **Go Build**.   
+The second method is to use `go build`.   
 
-Use **Go Build** to compile the Go program into an executable file.
+Use `go build` to compile the Go program into an executable file.
 ```
 go build
 ```
-This will create an executable file named hello-comp423 in the same directory. To run it, type:
+This will create an executable file named `hello-comp423` in the same directory. To run it, type:
 ```
 ./hello-comp423
 ```
@@ -147,5 +147,5 @@ gcc main.c -o output
 ```
 In Go, go build handles the compilation step and produces the executable directly.
 
-Congratulations you now have a working Dev Container to create a Go Project in.
-Many parts of this tutorial are inspired by Kris Jordan’s [Starting a Static Website Project with MkDocs](https://comp423-25s.github.io/resources/MkDocs/tutorial/#what-is-a-development-dev-container)
+Congratulations you now have a working Dev Container to create a Go Project in!
+Many parts of this tutorial are inspired by Kris Jordan’s [Starting a Static Website Project with MkDocs](https://comp423-25s.github.io/resources/MkDocs/tutorial/#what-is-a-development-dev-container).
