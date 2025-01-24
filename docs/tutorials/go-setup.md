@@ -32,7 +32,7 @@ git init
 4. Create a README file 
 ```
 echo "# Go Project" > README.md
-echo "Tutorial Link --> [Here]()" >> README.md
+echo "Tutorial Link --> [Here](https://apcodes.github.io/comp423-course-notes/)" >> README.md
 git add README.md
 git commit -m "Initial commit with README"
 ``` 
