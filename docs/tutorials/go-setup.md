@@ -1,4 +1,4 @@
-# Setting up a dev container for Rust
+# Setting up a dev container for Go
 
 * Primary author: [Anish Parepalli](https://github.com/apcodes)
 * Reviewer: [Matthew Thornton](https://github.com/mthornton1133)
