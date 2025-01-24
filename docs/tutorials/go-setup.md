@@ -1,4 +1,4 @@
-# Setting up a dev container for Go
+# Setting up a Dev Container for Go
 
 * Primary author: [Anish Parepalli](https://github.com/apcodes)
 * Reviewer: [Matthew Thornton](https://github.com/mthornton1133)
@@ -89,3 +89,63 @@ git push --set-upstream origin main
     "postCreateCommand": "go version"
 }
 ```
+1. Reopen the project in dev container.    
+2. Press ctrl + shift + p (cmd + shift + p for mac) then type Dev Containers: Reopen in Container.   
+3. Using the **go version** command you can see what version of go your on.
+```
+go version
+```
+
+## Creating Your Go Project
+1. cd into your go-project directory.
+```
+cd go-project
+```
+2. Initialize a Go module
+```
+go mod init hello-comp423
+```
+This sets up a new Go project and creates a go.mod file, which helps manage dependencies.
+3. Create your main file: Inside your project folder, create a new file named main.go.
+```
+touch main.go
+```
+Edit main.go to display “Hello COMP423”: Open the file in VSCode and add the following code:
+```
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello COMP423")
+}
+```
+
+### To Run the Program
+There are 2 different ways to run the program. The first method is the ```go run``` command.   
+This is a simplified way to compile and run the Go program in a single line:
+```
+go run main.go
+```
+
+The second method is to use **Go Build**.   
+
+Use **Go Build** to compile the Go program into an executable file.
+```
+go build
+```
+This will create an executable file named hello-comp423 in the same directory. To run it, type:
+```
+./hello-comp423
+```
+
+This is similar to using gcc to compile a C program, which we did in Comp 211, where you would run:
+
+```
+gcc main.c -o output
+./output
+```
+In Go, go build handles the compilation step and produces the executable directly.
+
+Congratulations you now have a working Dev Container to create a Go Project in.
+Many parts of this tutorial are inspired by Kris Jordan’s [Starting a Static Website Project with MkDocs](https://comp423-25s.github.io/resources/MkDocs/tutorial/#what-is-a-development-dev-container)
