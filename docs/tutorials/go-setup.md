@@ -32,6 +32,7 @@ git init
 4. Create a README file 
 ```
 echo "# Go Project" > README.md
+echo "Tutorial Link --> [Here]()" >> README.md
 git add README.md
 git commit -m "Initial commit with README"
 ``` 
@@ -40,11 +41,11 @@ git commit -m "Initial commit with README"
 2. Fill in the details as follows:   
 ```
    Repo Name: Go Project   
-   Description: Making an Hello World in Go!  
+   Description: "Making an Hello World in Go!"  
    Visibility: Public 
 ```
 3. Do not initialize the repo with a README, .gitingore, or license. 
-4. click **Create Repository**. 
+4. Click **Create Repository**. 
 
 ### Step 3. Link your Local Repository to Github
 1. Add GitHub Repository as remote.
@@ -68,9 +69,9 @@ git push --set-upstream origin main
 ## Setting Up the Development Environment
 
 ### Step 1. Add the Development Container Configuration
-1. In VS Code open the go-project directory. Go  File > Open Folder
-2. Install the official Go Vscode Plugin (Made by the Go Team at Google)
-3. Create a .devcontainer directory in the root of your project with the following file inside this “hidden” directory   
+1. In VS Code open the go-project directory. Go  File > Open Folder.
+2. Install Dev Containers extension in VS Code. 
+3. Create a .devcontainer directory in the root of your project with the following file inside this “hidden” directory.git    
 ```
 .devcontainer/devcontainer.json
 ```
@@ -85,6 +86,6 @@ git push --set-upstream origin main
             "extensions": ["golang.go"]
         }
     },
-    "postCreateCommand": "go mod init comp423_course_notes && go mod tidy"
+    "postCreateCommand": "go version"
 }
 ```
