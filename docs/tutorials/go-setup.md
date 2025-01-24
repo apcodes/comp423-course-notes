@@ -1,9 +1,9 @@
-# Setting up a dev container for Rust
+# Setting up a dev container for Go
 
 * Primary author: [Anish Parepalli](https://github.com/apcodes)
 * Reviewer: [Matthew Thornton](https://github.com/mthornton1133)
 
-Prerequisites
+## Prerequisites
 Before we dive in, make sure you have:
 
 1. A GitHub account: If you don’t have one yet, sign up at [GitHub](https://github.com/).
