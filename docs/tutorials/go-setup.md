@@ -146,5 +146,11 @@ gcc main.c -o output
 ```
 In Go, go build handles the compilation step and produces the executable directly.
 
+If you would like to save changes simply follow the git basics. The commands below pushes your changes so you can view them on GitHub:
+```
+git add .
+git commit -m "Followed Go Tutorial and can print Hello World!"
+git push -u origin main
+```
 Congratulations you now have a working Dev Container to create a Go Project in!
 Many parts of this tutorial are inspired by Kris Jordan’s [Starting a Static Website Project with MkDocs](https://comp423-25s.github.io/resources/MkDocs/tutorial/#what-is-a-development-dev-container).
